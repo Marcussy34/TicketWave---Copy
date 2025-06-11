@@ -774,12 +774,12 @@ export const TestimonialsSection = () => {
   // Real testimonials for TicketWave
   const testimonials = [
     {
-      name: "Vincent Kok",
-      username: "@vincentkok",
+      name: "Jessica Ho",
+      username: "@jessicaaa",
       body: "Finally, a ticketing platform for fans! No more getting scammed by fake tickets!",
       img: "https://avatar.vercel.sh/sarah",
       rating: 5,
-      event: "Bizpod Assessment"
+      event: "TARUMT Blockchain Club"
     },
     {
       name: "Derek Liew",

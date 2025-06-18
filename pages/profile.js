@@ -1,100 +1,93 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Tabs, Tab, Skeleton, Card } from "@nextui-org/react";
 import { useActiveAccount } from "thirdweb/react";
+import { useQuery } from '@tanstack/react-query';
+import { gql, request } from 'graphql-request';
 import ProfileHeader from '../components/ProfileHeader';
 import TicketCard from '../components/TicketCard';
-import { ethers } from 'ethers';
 import concertData from '../data/data.json';
+
+const url = 'https://api.studio.thegraph.com/query/90400/ticket/version/latest';
+
+const GET_USER_TICKETS = gql`
+  query GetUserTickets($buyer: Bytes!) {
+    ticketMinteds(where: { buyer: $buyer }) {
+      id
+      concertId
+      buyer
+      tokenId
+      timestamp
+      seatType
+      blockNumber
+      blockTimestamp
+      transactionHash
+    }
+  }
+`;
 
 const Portfolio = () => {
     const address = useActiveAccount();
-    const [tickets, setTickets] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchTickets = async () => {
-            if (!address) return;
+    // Use React Query to fetch tickets from The Graph
+    const { data: ticketData, isLoading, error } = useQuery({
+        queryKey: ['userTickets', address?.address],
+        queryFn: async () => {
+            if (!address?.address) throw new Error('No wallet connected');
+            
+            console.log("Fetching tickets for address:", address.address);
+            const result = await request(url, GET_USER_TICKETS, {
+                buyer: address.address.toLowerCase()
+            });
+            
+            console.log("GraphQL response:", result);
+            return result;
+        },
+        enabled: !!address?.address, // Only run query when address is available
+        staleTime: 30 * 1000, // Consider data fresh for 30 seconds
+    });
 
-            try {
-                const provider = new ethers.providers.JsonRpcProvider(process.env.NEXT_PUBLIC_ALCHEMY_API_KEY);
-                const contractAddress = "0x5039e2bF006967F8049933c7DF6c7Ca0b49AeBeB";
-                
-                // Updated event signature based on the logs
-                const eventSignature = "TicketMinted(uint256,address,uint256,uint256,string,string)";
-                const topic = ethers.utils.id(eventSignature);
+    // Process the raw ticket data into the format needed by the UI
+    const tickets = React.useMemo(() => {
+        if (!ticketData?.ticketMinteds) return [];
 
-                const filter = {
-                    address: contractAddress,
-                    topics: [
-                        topic,
-                        null, // concertId (indexed)
-                        ethers.utils.hexZeroPad(address.address, 32) // buyer (indexed)
-                    ],
-                    fromBlock: 0,
-                    toBlock: 'latest'
-                };
-
-                console.log("Fetching events for address:", address.address);
-                const logs = await provider.getLogs(filter);
-                console.log("Found logs:", logs);
-
-                const userTickets = await Promise.all(logs.map(async log => {
-                    // Parse the indexed parameters from topics
-                    const concertId = parseInt(log.topics[1], 16);
-                    
-                    // Parse the non-indexed parameters from data
-                    const decodedData = ethers.utils.defaultAbiCoder.decode(
-                        ['uint256', 'uint256', 'string', 'string'],
-                        ethers.utils.hexDataSlice(log.data, 0)
-                    );
-                    
-                    const tokenId = decodedData[0];
-                    const timestamp = decodedData[1];
-                    const seatType = decodedData[3];
-
-                    console.log("Parsed event data:", {
-                        concertId,
-                        tokenId: tokenId.toString(),
-                        timestamp: timestamp.toString(),
-                        seatType: seatType
-                    });
-
-                    const concert = concertData.concerts.find(c => c.id === concertId);
-                    if (!concert) {
-                        console.warn("Concert not found for ID:", concertId);
-                        return null;
-                    }
-
-                    return {
-                        tokenId: Number(tokenId),
-                        concertId,
-                        title: concert.title,
-                        date: concert.date,
-                        venue: concert.venue.name,
-                        image: concert.imgCard,
-                        hasEntered: false,
-                        purchaseDate: new Date(Number(timestamp) * 1000),
-                        seatType: seatType
-                    };
-                }));
-
-                const validTickets = userTickets.filter(Boolean);
-                console.log("Final processed tickets:", validTickets);
-                setTickets(validTickets);
-                setIsLoading(false);
-            } catch (error) {
-                console.error("Error fetching tickets:", error);
-                setIsLoading(false);
+        return ticketData.ticketMinteds.map(ticket => {
+            const concertId = parseInt(ticket.concertId);
+            const concert = concertData.concerts.find(c => c.id === concertId);
+            
+            if (!concert) {
+                console.warn("Concert not found for ID:", concertId);
+                return null;
             }
-        };
 
-        fetchTickets();
-    }, [address]);
+            return {
+                tokenId: Number(ticket.tokenId),
+                concertId,
+                title: concert.title,
+                date: concert.date,
+                venue: concert.venue.name,
+                image: concert.imgCard,
+                hasEntered: false, // This would need to be determined by checking TicketScanned events
+                purchaseDate: new Date(Number(ticket.timestamp) * 1000),
+                seatType: ticket.seatType
+            };
+        }).filter(Boolean); // Remove null entries
+    }, [ticketData]);
+
+    console.log("Processed tickets:", tickets);
 
     if (!address) {
         return (
             <div className="container mx-auto px-4 py-8 text-center">
                 <h1 className="text-2xl font-bold mb-4">Please connect your wallet</h1>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="container mx-auto px-4 py-8 text-center">
+                <h1 className="text-2xl font-bold mb-4 text-red-500">Error loading tickets</h1>
+                <p className="text-gray-600">{error.message}</p>
             </div>
         );
     }

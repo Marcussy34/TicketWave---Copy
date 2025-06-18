@@ -1,0 +1,53 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ConcertTicketsNFT
+    network: optimism-sepolia
+    source:
+      address: "0x5039e2bF006967F8049933c7DF6c7Ca0b49AeBeB"
+      abi: ConcertTicketsNFT
+      startBlock: 19463117
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - BatchMetadataUpdate
+        - ConcertAdded
+        - MetadataUpdate
+        - OwnershipTransferred
+        - ScannerStatusUpdated
+        - TicketMinted
+        - TicketScanned
+        - Transfer
+      abis:
+        - name: ConcertTicketsNFT
+          file: ./abis/ConcertTicketsNFT.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: BatchMetadataUpdate(uint256,uint256)
+          handler: handleBatchMetadataUpdate
+        - event: ConcertAdded(indexed uint256,uint256)
+          handler: handleConcertAdded
+        - event: MetadataUpdate(uint256)
+          handler: handleMetadataUpdate
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: ScannerStatusUpdated(address,bool)
+          handler: handleScannerStatusUpdated
+        - event: TicketMinted(indexed uint256,indexed address,uint256,uint256,string,string)
+          handler: handleTicketMinted
+        - event: TicketScanned(indexed uint256,indexed uint256,indexed address,uint256)
+          handler: handleTicketScanned
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ./src/concert-tickets-nft.ts

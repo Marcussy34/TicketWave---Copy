@@ -8,6 +8,7 @@ import QueryProvider from "../providers/QueryProvider";
 import Head from "next/head";
 import InstallPWA from "../components/InstallPWA";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/next"
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -47,6 +48,7 @@ function MyApp({ Component, pageProps }) {
             <InstallPWA />
           </div>
         </NextUIProvider>
+        <Analytics />
       </ThirdwebProvider>
     </QueryProvider>
   );

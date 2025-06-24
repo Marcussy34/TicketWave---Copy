@@ -775,7 +775,7 @@ export const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Jessica Ho",
-      username: "@jessicaaa",
+      username: "@jessicaaaa",
       body: "Finally, a ticketing platform for fans! No more getting scammed by fake tickets!",
       img: "https://avatar.vercel.sh/sarah",
       rating: 5,

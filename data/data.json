@@ -1,425 +1,403 @@
 {
-    "concerts": [
+  "concerts": [
+    {
+      "id": 1,
+      "title": "2nd Formative Assessment",
+      "imgCard": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LSSKeOYwgUTZfoBqRjbw3KUXIWQohJyxAg&s",
+      "imgCover": "https://www.edmates.com/wp-content/uploads/2022/09/Taylors_Lakeside_Campus.jpg",
+      "date": "6/11/2024",
+      "time": "10:00",
+      "location": "Taylor's University Bizpod",
+      "description": "Second formative assessment for startup for Ticketwave to show the prototype",
+      "price": {
+        "coach": 0.0,
+        "student": 0.0
+      },
+      "contractAddress": "0x1234567890abcdef1234567890abcdef12345678",
+      "venue": {
+        "name": "Bizpod",
+        "address": "Taylor's University Lakeside Campus",
+        "capacity": 20
+      },
+      "artists": ["Mr Vincent Kok"],
+      "additionalInfo": "Please buy tickets and scan on entry. Entry is free."
+    },
+    {
+      "id": 2,
+      "title": "The Infinite Dream",
+      "imgCard": "/concertCard/baz_con.jpg",
+      "imgCover": "/concertCover/bazzi.jpg",
+      "date": "15/9/2024",
+      "time": "20:00",
+      "location": "Madison Square Garden, New York City, USA",
+      "description": "Join Bazzi on a musical journey through 'The Infinite Dream'. This concert promises an intimate yet energetic experience, showcasing Bazzi's soulful vocals and heartfelt lyrics.",
+      "price": {
+        "vip": 249.99,
+        "standard": 129.99,
+        "economy": 69.99
+      },
+      "contractAddress": "0x2345678901abcdef2345678901abcdef23456789",
+      "venue": {
+        "name": "Madison Square Garden",
+        "address": "4 Pennsylvania Plaza, New York, NY 10001",
+        "capacity": 20000
+      },
+      "artists": ["Bazzi"],
+      "additionalInfo": "Doors open at 18:30. Meet & Greet packages available for VIP ticket holders."
+    },
+    {
+      "id": 3,
+      "title": "MUSIC of the SPHERES",
+      "imgCard": "/concertCard/coldplay.png",
+      "imgCover": "/concertCover/coldplay.png",
+      "date": "22/10/2024",
+      "time": "19:30",
+      "location": "Wembley Stadium, London, UK",
+      "description": "Coldplay's 'Music of the Spheres' world tour lands in London. Expect a cosmic experience with the band's signature anthems, stunning visuals, and eco-friendly concert innovations.",
+      "price": {
+        "vip": 350.0,
+        "standard": 180.0,
+        "economy": 90.0
+      },
+      "contractAddress": "0x3456789012abcdef3456789012abcdef34567890",
+      "venue": {
+        "name": "Wembley Stadium",
+        "address": "Wembley, London HA9 0WS, United Kingdom",
+        "capacity": 90000
+      },
+      "artists": [
+        "Chris Martin",
+        "Jonny Buckland",
+        "Guy Berryman",
+        "Will Champion"
+      ],
+      "additionalInfo": "This is a sustainable concert. Please bring your own reusable water bottle. Special LED wristbands will be provided."
+    },
+    {
+      "id": 4,
+      "title": "The +–=÷× Dream",
+      "imgCard": "/concertCard/ed_con.jpg",
+      "imgCover": "/concertCover/ed.jpg",
+      "date": "5/11/2024",
+      "time": "19:00",
+      "location": "Etihad Stadium, Melbourne, Australia",
+      "description": "Ed Sheeran brings his mathematical tour to Melbourne. This solo performance showcases Ed's legendary loop pedal skills and heartwarming songs from across his career.",
+      "price": {
+        "vip": 275.0,
+        "standard": 155.0,
+        "economy": 85.0
+      },
+      "contractAddress": "0x4567890123abcdef4567890123abcdef45678901",
+      "venue": {
+        "name": "Etihad Stadium",
+        "address": "740 Bourke St, Docklands VIC 3008, Australia",
+        "capacity": 53359
+      },
+      "artists": ["Ed Sheeran"],
+      "additionalInfo": "No backpacks allowed. Small bags under 30x30cm permitted. Show includes special effects and strobe lighting."
+    },
+    {
+      "id": 5,
+      "title": "I Met You When I Was 18",
+      "imgCard": "/concertCard/lauv_con.jpg",
+      "imgCover": "/concertCover/lauv.jpg",
+      "date": "18/12/2024",
+      "time": "20:30",
+      "location": "The O2 Arena, London, UK",
+      "description": "Lauv takes fans on a nostalgic journey with 'I Met You When I Was 18'. This concert features his chart-topping hits and new material, promising an emotionally charged night.",
+      "price": {
+        "vip": 199.99,
+        "standard": 119.99,
+        "economy": 59.99
+      },
+      "contractAddress": "0x5678901234abcdef5678901234abcdef56789012",
+      "venue": {
+        "name": "The O2 Arena",
+        "address": "Peninsula Square, London SE10 0DX, United Kingdom",
+        "capacity": 20000
+      },
+      "artists": ["Lauv"],
+      "additionalInfo": "Special acoustic session included. Early entry for VIP ticket holders at 18:30."
+    },
+    {
+      "id": 6,
+      "title": "Twice Ready To Be Special",
+      "imgCard": "https://tokytunes.com/wp-content/uploads/2024/06/TWICEs-two-day-concert-at-Nissan-Stadium-will-be-broadcast-live.jpg",
+      "imgCover": "https://tokytunes.com/wp-content/uploads/2024/06/TWICEs-two-day-concert-at-Nissan-Stadium-will-be-broadcast-live.jpg",
+      "date": "20/10/2024",
+      "time": "17:00",
+      "location": "Nissan Stadium, Yokohama, Japan",
+      "description": "TWICE presents a special two-day concert extravaganza at Nissan Stadium. This unique event showcases new performances and fan-favorite hits in TWICE's biggest show yet.",
+      "price": {
+        "vip": 399.99,
+        "standard": 199.99,
+        "economy": 99.99
+      },
+      "contractAddress": "0x6789012345abcdef6789012345abcdef67890123",
+      "venue": {
+        "name": "Nissan Stadium",
+        "address": "3300 Kozukue-cho, Kohoku-ku, Yokohama, Kanagawa Prefecture",
+        "capacity": 72327
+      },
+      "artists": [
+        "Nayeon",
+        "Jeongyeon",
+        "Momo",
+        "Sana",
+        "Jihyo",
+        "Mina",
+        "Dahyun",
+        "Chaeyoung",
+        "Tzuyu"
+      ],
+      "additionalInfo": "Two-day event. Tickets valid for both days. Special merchandise available exclusively for ticket holders."
+    },
+    {
+      "id": 8,
+      "title": "Blockchain 101",
+      "imgCard": "/monopoly.jpg",
+      "imgCover": "/monopoly.jpg",
+      "date": "21/12/2024 - 22/12/2024",
+      "time": " 09:00 am (Day 1), 10:00 am (Day 2)",
+      "location": "Taylor's University Lakeside Campus",
+      "description": "This two-day workshop offers participants an engaging introduction to Blockchain technology. On Day 1, participants will learn blockchain concepts by playing a widely known boardgame, followed by an Ideation session where they will brainstorm and explore innovative ways to use blockchain technology. Day 2 focuses on pitching these ideas during the Ideathon Pitching session, followed by a Panel Discussion. The event concludes with the announcement of results and prize distribution with a prizepool of 700 USD. This workshop provides hands-on learning and problem-solving experience in the blockchain space, offering participants the chance to showcase their creativity and win exciting prizes. Day 1 runs from 9:00 AM to 3:00 PM, and Day 2 runs from 10:00 AM to 2:30 PM.",
+      "price": {
+        "Participant": 0.0
+      },
+      "contractAddress": "0x7890123456abcdef7890123456abcdef78901234",
+      "venue": {
+        "name": "Taylor's University Lakeside Campus",
+        "address": "1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
+        "detailedLocation": "Lecture Theatre 27 (LT27)",
+        "parking": "Free open-air parking available behind the university",
+        "howToGetThere": "LT27 is located at Level 1 of Block C. From the parking area, walk to LT1, continue to LT2 and walk straight, and at the first junction turn right to reach LT27."
+      },
+      "organisers": [
+        "Taylor's IET Club",
+        "Taylor Blockchain Club",
+        "TARUMT Blockchain Club"
+      ],
+      "organisersImage": ["/IET.jpg", "/Taylor.jpg", "/TARUMT.png"],
+      "sponsors": ["Superteam Malaysia"],
+      "sponsorsImage": ["/tourism_malaysia.png", "/mdec.png"],
+      "additionalInfo": "Enhance your blockchain knowledge through interactive games and workshops, then participate in an Ideathon to develop innovative solutions and pitch your ideas for a brighter digital future! \n\n**Judging Criteria**\n\n1. Problem Statement (15 points)\n\n• Is the problem well-defined?\n\n• Is the problem significant and impactful enough to create a solution?\n\n2. Solution & Innovation (40 points)\n\n• What is the proposed solution?\n\n• Is the solution innovative, creative, and unique?\n\n• Does it stand out from generic or already existing ideas?\n\n3. Business Case (10 points)\n\n• Is there a clear path to monetization or sustainability?\n\n• How viable is the business model in the long term?\n\n4. Technical Feasibility (5 points)\n\n• Does the idea demonstrate technical feasibility?\n\n• Optional: Is there a prototype, such as code or a Figma design?\n\n5. Pitching & Demo (15 points)\n\n• How compelling and clear are the slides and the pitch?\n\n• Does the presentation effectively convey the value of the idea?\n\n6. Why Blockchain? (15 points)\n\n• Does the idea justify using blockchain technology?\n\n• Is blockchain essential to the solution, or is it just an optional add-on?\n\n**Judging Decisions**\n- The judges' decisions are final and binding.\n\n**Prize Distribution per Team**\n- First Place: 140 USD\n- Second Place: 90 USD\n- Third Place: 60 USD\n- 4th to 10th Place: 30 USD each\n- 11th to 20th Place: 20 USD each\n\n**Submission Requirements**\n- Video presentation (3-5 minutes) explaining your solution\n- Pitch deck/slides\n- Optional coding or Figma \n- Dealine to submission for Google Form is 22/12/2024 10:00 a.m.\n- Team Registration Link: [Click here to register your team](https://docs.google.com/forms/d/e/1FAIpQLSeiZqX1Q0q5gp1ivYbksA5pYJVYLeI5UdeeKsAotzRIL7HwPA/viewform)\n- Feedback on using the ticketing platform and the best feedback will win a RM 30 Starbucks gift card: [Submit your feedback](https://docs.google.com/forms/d/e/1FAIpQLSdo9kao2_Ue2WXSH25dXCfMjpcTC2IM7QxwaW1NZwViy90bXg/viewform?usp=dialog)\n- Ideathon Project Submission Link: [Submit your project](https://forms.gle/dPvRV8PTJq3oHxjy8)\n\n**Summary for Participants:**\n- Hands-on Blockchain Workshop with a widely known boardgame\n- Access to expert panel discussion\n- Refreshment provided\n- Ideathon participation with the opportunity to win prizes\n- Certificates for participation\n\n**Expected Outcomes:**\n- Participants will gain a deeper understanding of blockchain technology and its potential applications.\n- Participants will learn to collaborate effectively in teams to create conceptual solutions.\n- Winners will receive prizes based on the creativity and feasibility of their ideas."
+    },
+    {
+      "id": 9,
+      "title": "MYBW University Roadshow",
+      "imgCard": "/MBW.jpg",
+      "imgCover": "/MBW.jpg",
+      "date": "11/6/2025",
+      "time": "18:30",
+      "location": "Lecture Theatre 13, Taylor's University",
+      "description": "🔥We're excited to announce that the Malaysia Blockchain Week (MYBW) Roadshow is coming to Taylor's University! 🚀 A conference event endorsed by Tourism of Malaysia & Malaysia Digital Economy Corporation (MDEC)! Get ready for an evening of exploration into the world of blockchain, AI, and Web3 — whether you're just starting out or already building in the space. What to Expect: 💡 Insights from IOTA & MYBW: Learn from Web3 innovators 🚀 Insider Stories: How experts built impactful careers in Web3 🌐 Global & Local Insights: Trends from the Malaysian & global markets 🔍 Industry Insights: Current market job opportunities for students from all backgrounds 🐝 Crypto Markets: Why big players are investing in blockchain. This is your moment to plug into the industry of web3. Let's make it a night of ideas, innovation, and connection.",
+      "price": {
+        "general": 0.0
+      },
+      "contractAddress": "0x8901234567abcdef8901234567abcdef89012345",
+      "venue": {
+        "name": "Lecture Theatre 13",
+        "address": "Taylor's University Lakeside Campus, 1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
+        "capacity": 200
+      },
+      "artists": ["IOTA Foundation", "Malaysia Blockchain Week"],
+      "organisers": ["Malaysia Blockchain Week", "IOTA Foundation"],
+      "organisersImage": ["/MYBW_logo.jpg", "/IOTA_logo.png"],
+      "sponsors": [
+        "Tourism Malaysia",
+        "Malaysia Digital Economy Corporation (MDEC)"
+      ],
+      "sponsorsImage": ["/tourism_malaysia.jpg", "/mdec.png"],
+      "registrationLink": "https://lu.ma/dvzzo0f7",
+      "additionalInfo": "🤤 Dinner will be provided. This conference event is endorsed by Tourism of Malaysia & Malaysia Digital Economy Corporation (MDEC). Whether you're just starting out or already building in the Web3 space, this event offers valuable insights into blockchain, AI, and Web3 technologies. Register now for your slot at the provided link."
+    },
+    {
+      "id": 10,
+      "title": "Trading Workshop Certificate",
+      "imgCard": "/trading_workshop.jpg",
+      "imgCover": "/trading_workshop.jpg",
+      "date": "6/5/2025 - 27/5/2025",
+      "time": "20:00",
+      "location": "LT27 & LT28, Taylor's University",
+      "description": "🚀 Ready to enhance your trading knowledge and skills? This 4-week Trading Mastery Workshop is hosted by Taylor's Blockchain Club! 📈 Learn everything from Foundations of Trading, Technical Mastery, Risk Management & Psychology, to Advanced Strategies. 🔥 Exclusive benefits include Certificate of Completion, Special Airdrops 🎁, and exciting rewards! This certificate minting is available for participants who attended the workshop sessions.",
+      "price": {
+        "certificate": 0.0
+      },
+      "contractAddress": "0x9012345678abcdef9012345678abcdef90123456",
+      "venue": {
+        "name": "LT27 & LT28",
+        "address": "Taylor's University Lakeside Campus, 1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
+        "detailedLocation": "Lecture Theatre 27 & 28 (LT27 & LT28)",
+        "capacity": 100,
+        "howToGetThere": "LT27 & LT28 are located at Level 1 of Block C. From the parking area, walk to LT1, continue to LT2 and walk straight, and at the first junction turn right to reach the lecture theatres."
+      },
+      "organisers": ["Taylor's Blockchain Club"],
+      "organisersImage": ["/Taylor.jpg"],
+      "workshopSchedule": [
         {
-            "id": 1,
-            "title": "2nd Formative Assessment",
-            "imgCard": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LSSKeOYwgUTZfoBqRjbw3KUXIWQohJyxAg&s",
-            "imgCover": "https://www.edmates.com/wp-content/uploads/2022/09/Taylors_Lakeside_Campus.jpg",
-            "date": "6/11/2024",
-            "time": "10:00",
-            "location": "Taylor's University Bizpod",
-            "description": "Second formative assessment for startup for Ticketwave to show the prototype",
-            "price": {
-                "coach": 0.00,
-                "student": 0.00
-            },
-            "contractAddress": "0x1234567890abcdef1234567890abcdef12345678",
-            "venue": {
-                "name": "Bizpod",
-                "address": "Taylor's University Lakeside Campus",
-                "capacity": 20
-            },
-            "artists": [
-                "Mr Vincent Kok"
-            ],
-            "additionalInfo": "Please buy tickets and scan on entry. Entry is free."
+          "week": 1,
+          "date": "6/5/2025",
+          "topic": "Foundations of Trading"
         },
         {
-            "id": 2,
-            "title": "The Infinite Dream",
-            "imgCard": "/concertCard/baz_con.jpg",
-            "imgCover": "/concertCover/bazzi.jpg",
-            "date": "15/9/2024",
-            "time": "20:00",
-            "location": "Madison Square Garden, New York City, USA",
-            "description": "Join Bazzi on a musical journey through 'The Infinite Dream'. This concert promises an intimate yet energetic experience, showcasing Bazzi's soulful vocals and heartfelt lyrics.",
-            "price": {
-                "vip": 249.99,
-                "standard": 129.99,
-                "economy": 69.99
-            },
-            "contractAddress": "0x2345678901abcdef2345678901abcdef23456789",
-            "venue": {
-                "name": "Madison Square Garden",
-                "address": "4 Pennsylvania Plaza, New York, NY 10001",
-                "capacity": 20000
-            },
-            "artists": [
-                "Bazzi"
-            ],
-            "additionalInfo": "Doors open at 18:30. Meet & Greet packages available for VIP ticket holders."
+          "week": 2,
+          "date": "13/5/2025",
+          "topic": "Technical Mastery"
         },
         {
-            "id": 3,
-            "title": "MUSIC of the SPHERES",
-            "imgCard": "/concertCard/coldplay.png",
-            "imgCover": "/concertCover/coldplay.png",
-            "date": "22/10/2024",
-            "time": "19:30",
-            "location": "Wembley Stadium, London, UK",
-            "description": "Coldplay's 'Music of the Spheres' world tour lands in London. Expect a cosmic experience with the band's signature anthems, stunning visuals, and eco-friendly concert innovations.",
-            "price": {
-                "vip": 350.00,
-                "standard": 180.00,
-                "economy": 90.00
-            },
-            "contractAddress": "0x3456789012abcdef3456789012abcdef34567890",
-            "venue": {
-                "name": "Wembley Stadium",
-                "address": "Wembley, London HA9 0WS, United Kingdom",
-                "capacity": 90000
-            },
-            "artists": [
-                "Chris Martin",
-                "Jonny Buckland",
-                "Guy Berryman",
-                "Will Champion"
-            ],
-            "additionalInfo": "This is a sustainable concert. Please bring your own reusable water bottle. Special LED wristbands will be provided."
+          "week": 3,
+          "date": "20/5/2025",
+          "topic": "Risk Management & Psychology"
         },
         {
-            "id": 4,
-            "title": "The +–=÷× Dream",
-            "imgCard": "/concertCard/ed_con.jpg",
-            "imgCover": "/concertCover/ed.jpg",
-            "date": "5/11/2024",
-            "time": "19:00",
-            "location": "Etihad Stadium, Melbourne, Australia",
-            "description": "Ed Sheeran brings his mathematical tour to Melbourne. This solo performance showcases Ed's legendary loop pedal skills and heartwarming songs from across his career.",
-            "price": {
-                "vip": 275.00,
-                "standard": 155.00,
-                "economy": 85.00
-            },
-            "contractAddress": "0x4567890123abcdef4567890123abcdef45678901",
-            "venue": {
-                "name": "Etihad Stadium",
-                "address": "740 Bourke St, Docklands VIC 3008, Australia",
-                "capacity": 53359
-            },
-            "artists": [
-                "Ed Sheeran"
-            ],
-            "additionalInfo": "No backpacks allowed. Small bags under 30x30cm permitted. Show includes special effects and strobe lighting."
-        },
-        {
-            "id": 5,
-            "title": "I Met You When I Was 18",
-            "imgCard": "/concertCard/lauv_con.jpg",
-            "imgCover": "/concertCover/lauv.jpg",
-            "date": "18/12/2024",
-            "time": "20:30",
-            "location": "The O2 Arena, London, UK",
-            "description": "Lauv takes fans on a nostalgic journey with 'I Met You When I Was 18'. This concert features his chart-topping hits and new material, promising an emotionally charged night.",
-            "price": {
-                "vip": 199.99,
-                "standard": 119.99,
-                "economy": 59.99
-            },
-            "contractAddress": "0x5678901234abcdef5678901234abcdef56789012",
-            "venue": {
-                "name": "The O2 Arena",
-                "address": "Peninsula Square, London SE10 0DX, United Kingdom",
-                "capacity": 20000
-            },
-            "artists": [
-                "Lauv"
-            ],
-            "additionalInfo": "Special acoustic session included. Early entry for VIP ticket holders at 18:30."
-        },
-        {
-            "id": 6,
-            "title": "Twice Ready To Be Special",
-            "imgCard": "https://tokytunes.com/wp-content/uploads/2024/06/TWICEs-two-day-concert-at-Nissan-Stadium-will-be-broadcast-live.jpg",
-            "imgCover": "https://tokytunes.com/wp-content/uploads/2024/06/TWICEs-two-day-concert-at-Nissan-Stadium-will-be-broadcast-live.jpg",
-            "date": "20/10/2024",
-            "time": "17:00",
-            "location": "Nissan Stadium, Yokohama, Japan",
-            "description": "TWICE presents a special two-day concert extravaganza at Nissan Stadium. This unique event showcases new performances and fan-favorite hits in TWICE's biggest show yet.",
-            "price": {
-                "vip": 399.99,
-                "standard": 199.99,
-                "economy": 99.99
-            },
-            "contractAddress": "0x6789012345abcdef6789012345abcdef67890123",
-            "venue": {
-                "name": "Nissan Stadium",
-                "address": "3300 Kozukue-cho, Kohoku-ku, Yokohama, Kanagawa Prefecture",
-                "capacity": 72327
-            },
-            "artists": [
-                "Nayeon",
-                "Jeongyeon",
-                "Momo",
-                "Sana",
-                "Jihyo",
-                "Mina",
-                "Dahyun",
-                "Chaeyoung",
-                "Tzuyu"
-            ],
-            "additionalInfo": "Two-day event. Tickets valid for both days. Special merchandise available exclusively for ticket holders."
-        },
-        {
-            "id": 8,
-            "title": "Blockchain 101",
-            "imgCard": "/monopoly.jpg",
-            "imgCover": "/monopoly.jpg",
-            "date": "21/12/2024 - 22/12/2024",
-            "time": " 09:00 am (Day 1), 10:00 am (Day 2)",
-            "location": "Taylor's University Lakeside Campus",
-            "description": "This two-day workshop offers participants an engaging introduction to Blockchain technology. On Day 1, participants will learn blockchain concepts by playing a widely known boardgame, followed by an Ideation session where they will brainstorm and explore innovative ways to use blockchain technology. Day 2 focuses on pitching these ideas during the Ideathon Pitching session, followed by a Panel Discussion. The event concludes with the announcement of results and prize distribution with a prizepool of 700 USD. This workshop provides hands-on learning and problem-solving experience in the blockchain space, offering participants the chance to showcase their creativity and win exciting prizes. Day 1 runs from 9:00 AM to 3:00 PM, and Day 2 runs from 10:00 AM to 2:30 PM.",
-            "price": {
-                "Participant": 0.00
-            },
-            "contractAddress": "0x7890123456abcdef7890123456abcdef78901234",
-            "venue": {
-                "name": "Taylor's University Lakeside Campus",
-                "address": "1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
-                "detailedLocation": "Lecture Theatre 27 (LT27)",
-                "parking": "Free open-air parking available behind the university",
-                "howToGetThere": "LT27 is located at Level 1 of Block C. From the parking area, walk to LT1, continue to LT2 and walk straight, and at the first junction turn right to reach LT27."
-            },
-            "organisers": [
-                "Taylor's IET Club",
-                "Taylor Blockchain Club",
-                "TARUMT Blockchain Club"
-            ],
-            "organisersImage": [
-                "/IET.jpg",
-                "/Taylor.jpg",
-                "/TARUMT.png"
-            ],
-            "sponsors": [
-                "Superteam Malaysia"
-            ],
-            "sponsorsImage": [
-                "/tourism_malaysia.png",
-                "/mdec.png"
-            ],
-            "additionalInfo": "Enhance your blockchain knowledge through interactive games and workshops, then participate in an Ideathon to develop innovative solutions and pitch your ideas for a brighter digital future! \n\n**Judging Criteria**\n\n1. Problem Statement (15 points)\n\n• Is the problem well-defined?\n\n• Is the problem significant and impactful enough to create a solution?\n\n2. Solution & Innovation (40 points)\n\n• What is the proposed solution?\n\n• Is the solution innovative, creative, and unique?\n\n• Does it stand out from generic or already existing ideas?\n\n3. Business Case (10 points)\n\n• Is there a clear path to monetization or sustainability?\n\n• How viable is the business model in the long term?\n\n4. Technical Feasibility (5 points)\n\n• Does the idea demonstrate technical feasibility?\n\n• Optional: Is there a prototype, such as code or a Figma design?\n\n5. Pitching & Demo (15 points)\n\n• How compelling and clear are the slides and the pitch?\n\n• Does the presentation effectively convey the value of the idea?\n\n6. Why Blockchain? (15 points)\n\n• Does the idea justify using blockchain technology?\n\n• Is blockchain essential to the solution, or is it just an optional add-on?\n\n**Judging Decisions**\n- The judges' decisions are final and binding.\n\n**Prize Distribution per Team**\n- First Place: 140 USD\n- Second Place: 90 USD\n- Third Place: 60 USD\n- 4th to 10th Place: 30 USD each\n- 11th to 20th Place: 20 USD each\n\n**Submission Requirements**\n- Video presentation (3-5 minutes) explaining your solution\n- Pitch deck/slides\n- Optional coding or Figma \n- Dealine to submission for Google Form is 22/12/2024 10:00 a.m.\n- Team Registration Link: [Click here to register your team](https://docs.google.com/forms/d/e/1FAIpQLSeiZqX1Q0q5gp1ivYbksA5pYJVYLeI5UdeeKsAotzRIL7HwPA/viewform)\n- Feedback on using the ticketing platform and the best feedback will win a RM 30 Starbucks gift card: [Submit your feedback](https://docs.google.com/forms/d/e/1FAIpQLSdo9kao2_Ue2WXSH25dXCfMjpcTC2IM7QxwaW1NZwViy90bXg/viewform?usp=dialog)\n- Ideathon Project Submission Link: [Submit your project](https://forms.gle/dPvRV8PTJq3oHxjy8)\n\n**Summary for Participants:**\n- Hands-on Blockchain Workshop with a widely known boardgame\n- Access to expert panel discussion\n- Refreshment provided\n- Ideathon participation with the opportunity to win prizes\n- Certificates for participation\n\n**Expected Outcomes:**\n- Participants will gain a deeper understanding of blockchain technology and its potential applications.\n- Participants will learn to collaborate effectively in teams to create conceptual solutions.\n- Winners will receive prizes based on the creativity and feasibility of their ideas."
-        },
-        {
-            "id": 9,
-            "title": "MYBW University Roadshow",
-            "imgCard": "/MBW.jpg",
-            "imgCover": "/MBW.jpg",
-            "date": "11/6/2025",
-            "time": "18:30",
-            "location": "Lecture Theatre 13, Taylor's University",
-            "description": "🔥We're excited to announce that the Malaysia Blockchain Week (MYBW) Roadshow is coming to Taylor's University! 🚀 A conference event endorsed by Tourism of Malaysia & Malaysia Digital Economy Corporation (MDEC)! Get ready for an evening of exploration into the world of blockchain, AI, and Web3 — whether you're just starting out or already building in the space. What to Expect: 💡 Insights from IOTA & MYBW: Learn from Web3 innovators 🚀 Insider Stories: How experts built impactful careers in Web3 🌐 Global & Local Insights: Trends from the Malaysian & global markets 🔍 Industry Insights: Current market job opportunities for students from all backgrounds 🐝 Crypto Markets: Why big players are investing in blockchain. This is your moment to plug into the industry of web3. Let's make it a night of ideas, innovation, and connection.",
-            "price": {
-                "general": 0.00
-            },
-            "contractAddress": "0x8901234567abcdef8901234567abcdef89012345",
-            "venue": {
-                "name": "Lecture Theatre 13",
-                "address": "Taylor's University Lakeside Campus, 1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
-                "capacity": 200
-            },
-            "artists": [
-                "IOTA Foundation",
-                "Malaysia Blockchain Week"
-            ],
-            "organisers": [
-                "Malaysia Blockchain Week",
-                "IOTA Foundation"
-            ],
-            "organisersImage": [
-                "/MYBW_logo.jpg",
-                "/IOTA_logo.png"
-            ],
-            "sponsors": [
-                "Tourism Malaysia",
-                "Malaysia Digital Economy Corporation (MDEC)"
-            ],
-            "sponsorsImage": [
-                "/tourism_malaysia.jpg",
-                "/mdec.png"
-            ],
-            "registrationLink": "https://lu.ma/dvzzo0f7",
-            "additionalInfo": "🤤 Dinner will be provided. This conference event is endorsed by Tourism of Malaysia & Malaysia Digital Economy Corporation (MDEC). Whether you're just starting out or already building in the Web3 space, this event offers valuable insights into blockchain, AI, and Web3 technologies. Register now for your slot at the provided link."
-        },
-        {
-            "id": 10,
-            "title": "Trading Workshop Certificate",
-            "imgCard": "/trading_workshop.jpg",
-            "imgCover": "/trading_workshop.jpg",
-            "date": "6/5/2025 - 27/5/2025",
-            "time": "20:00",
-            "location": "LT27 & LT28, Taylor's University",
-            "description": "🚀 Ready to enhance your trading knowledge and skills? This 4-week Trading Mastery Workshop is hosted by Taylor's Blockchain Club! 📈 Learn everything from Foundations of Trading, Technical Mastery, Risk Management & Psychology, to Advanced Strategies. 🔥 Exclusive benefits include Certificate of Completion, Special Airdrops 🎁, and exciting rewards! This certificate minting is available for participants who attended the workshop sessions.",
-            "price": {
-                "certificate": 0.00
-            },
-            "contractAddress": "0x9012345678abcdef9012345678abcdef90123456",
-            "venue": {
-                "name": "LT27 & LT28",
-                "address": "Taylor's University Lakeside Campus, 1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
-                "detailedLocation": "Lecture Theatre 27 & 28 (LT27 & LT28)",
-                "capacity": 100,
-                "howToGetThere": "LT27 & LT28 are located at Level 1 of Block C. From the parking area, walk to LT1, continue to LT2 and walk straight, and at the first junction turn right to reach the lecture theatres."
-            },
-            "organisers": [
-                "Taylor's Blockchain Club"
-            ],
-            "organisersImage": [
-                "/Taylor.jpg"
-            ],
-            "workshopSchedule": [
-                {
-                    "week": 1,
-                    "date": "6/5/2025",
-                    "topic": "Foundations of Trading"
-                },
-                {
-                    "week": 2,
-                    "date": "13/5/2025",
-                    "topic": "Technical Mastery"
-                },
-                {
-                    "week": 3,
-                    "date": "20/5/2025",
-                    "topic": "Risk Management & Psychology"
-                },
-                {
-                    "week": 4,
-                    "date": "27/5/2025",
-                    "topic": "Advanced Strategies"
-                }
-            ],
-            "registrationLink": "https://lu.ma/2ua2wi0m",
-            "certificateType": "completion",
-            "additionalInfo": "**Certificate Minting for Workshop Participants**\n\nThis certificate minting is exclusively available for participants who attended the 4-week Trading Mastery Workshop sessions.\n\n**Workshop Schedule:**\n- **Week 1 (May 6)**: Foundations of Trading\n- **Week 2 (May 13)**: Technical Mastery  \n- **Week 3 (May 20)**: Risk Management & Psychology\n- **Week 4 (May 27)**: Advanced Strategies\n\n**🕗 Time**: 8:00 PM (Registration starts 7:30 PM)\n**📍 Location**: LT27 & LT28, Taylor's University\n\n**🔥 Exclusive Benefits for Certificate Holders:**\n- Digital Certificate of Completion (NFT)\n- Special Airdrops 🎁\n- Exciting rewards and future workshop priority access! 🎉\n- Proof of completion for your trading education journey\n\n**Eligibility**: Only participants who attended the workshop sessions can mint this certificate. Verification may be required.\n\n**Important Notes:**\n- Seats for the physical workshop are LIMITED\n- Register for the workshop through: https://lu.ma/2ua2wi0m\n- Certificate minting will be available after workshop completion\n- This certificate serves as proof of your trading education achievement\n\n✨ Level up your trading skills and get a blockchain-verified certificate to prove it!"
-        },
-        {
-            "id": 11,
-            "title": "Mega Hackathon Certificate",
-            "imgCard": "/superteam_hackathon.png",
-            "imgCover": "/superteam_hackathon.png",
-            "date": "24/5/2025",
-            "time": "10:00",
-            "location": "Taylor's University Lakeside Campus",
-            "description": "🚀 SuperteamMY Mega Hackathon Certificate Minting for Top 30 Finalists! This hackathon is designed to onboard new developers and groom aspiring founders, helping them launch and kickstart their web3 journey in the Solana ecosystem. Participants who made it to the top 30 submissions and pitched at MegaHack Demo Day are eligible to mint this exclusive certificate NFT. The hackathon featured open-topic building across multiple tracks including DePIN, Stablecoins, DeFi, AI, Gaming, Infrastructure, and Consumer Apps with a total prize pool of $15,000 USDC.",
-            "price": {
-                "certificate": 0.00
-            },
-            "contractAddress": "0xa012345678abcdef0123456789abcdef01234567",
-            "venue": {
-                "name": "Taylor's University Lakeside Campus",
-                "address": "1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
-                "detailedLocation": "MegaHack Demo Day Venue",
-                "capacity": 200,
-                "parking": "Free open-air parking available behind the university"
-            },
-            "organisers": [
-                "Superteam Malaysia"
-            ],
-            "organisersImage": [
-                "/superteam.png"
-            ],
-            "sponsors": [
-                "Solana Foundation",
-                "Colosseum"
-            ],
-            "sponsorsImage": [
-                "/solana_logo.jpg",
-                "/colosseum_logo.png"
-            ],
-            "hackathonTracks": [
-                "DePIN",
-                "Stablecoins", 
-                "DeFi",
-                "AI",
-                "Gaming",
-                "Infrastructure",
-                "Consumer Apps"
-            ],
-            "prizePool": [
-                {
-                    "position": "1st Place",
-                    "prize": "$5,000 USDC"
-                },
-                {
-                    "position": "2nd Place", 
-                    "prize": "$3,000 USDC"
-                },
-                {
-                    "position": "3rd Place",
-                    "prize": "$2,000 USDC"
-                },
-                {
-                    "position": "4th Place",
-                    "prize": "$1,500 USDC"
-                },
-                {
-                    "position": "5th Place",
-                    "prize": "$1,000 USDC"
-                },
-                {
-                    "position": "6th-10th Place",
-                    "prize": "$500 USDC each"
-                }
-            ],
-            "timeline": [
-                {
-                    "phase": "Teaming & Building Phase",
-                    "dates": "11th March - 14th April"
-                },
-                {
-                    "phase": "Submission Period", 
-                    "dates": "15th April - 15th May"
-                },
-                {
-                    "phase": "Preliminary Judging",
-                    "dates": "15th May - 20th May"
-                },
-                {
-                    "phase": "Top 30 Announcement",
-                    "dates": "20th May"
-                },
-                {
-                    "phase": "MegaHack Demo Day",
-                    "dates": "24th May"
-                },
-                {
-                    "phase": "Winners Announcement",
-                    "dates": "1st June"
-                }
-            ],
-            "judgingCriteria": [
-                {
-                    "category": "Technical Implementation",
-                    "weight": "40%",
-                    "description": "Quality of code, functionality, scalability, and innovation"
-                },
-                {
-                    "category": "Practicality & Impact", 
-                    "weight": "30%",
-                    "description": "User adoption potential and meaningful improvement over existing solutions"
-                },
-                {
-                    "category": "Presentation & Clarity",
-                    "weight": "20%", 
-                    "description": "Communication effectiveness and demo quality"
-                },
-                {
-                    "category": "User Experience & Design",
-                    "weight": "10%",
-                    "description": "Interface design, user pain point resolution, and onboarding experience"
-                }
-            ],
-            "submissionRequirements": [
-                "Pitch deck with blockchain integration elements",
-                "3-minute elevator pitch video",
-                "GitHub repository link",
-                "Project social media links",
-                "Submitted to Superteam Earn",
-                "Submitted to Colosseum Breakout"
-            ],
-            "telegramGroup": "https://t.me/superteammy",
-            "certificateType": "participation",
-            "additionalInfo": "**Certificate Minting for Top 30 Hackathon Finalists**\n\nThis exclusive certificate is available only for participants who:\n✅ Made it to the top 30 submissions\n✅ Pitched at MegaHack Demo Day on May 24th at Taylor's University\n✅ Successfully completed all submission requirements\n\n**About SuperteamMY Mega Hackathon:**\nA comprehensive hackathon designed to onboard new developers and groom aspiring founders in the Solana ecosystem. This open-topic, open-to-all hackathon encouraged building across multiple cutting-edge tracks.\n\n**🏆 Total Prize Pool: $15,000 USDC**\nWith prizes ranging from $500 to $5,000 USDC for the top 10 teams.\n\n**🛠️ Building Tracks:**\n- DePIN (Decentralized Physical Infrastructure)\n- Stablecoins\n- DeFi (Decentralized Finance)  \n- AI (Artificial Intelligence)\n- Gaming\n- Infrastructure\n- Consumer Applications\n\n**📋 Judging Focus:**\n- Technical implementation and code quality (40%)\n- Real-world impact and practicality (30%)\n- Presentation clarity and demo effectiveness (20%)\n- User experience and design quality (10%)\n\n**🔗 Resources Provided:**\n- Month-long workshop series for skill development\n- Comprehensive hacker pack with tools and documentation\n- Networking opportunities with industry professionals\n- Access to Solana ecosystem primitives and integrations\n\n**🎯 Certificate Benefits:**\n- Proof of top 30 finalist achievement in Solana hackathon\n- NFT certificate on Solana blockchain\n- Recognition in the Superteam Malaysia ecosystem\n- Portfolio credibility for future web3 opportunities\n- Access to exclusive Superteam events and networking\n\n**⚡ Powered by Solana:**\nThis hackathon emphasized leveraging Solana's high performance and low costs to create exceptional user experiences and innovative solutions.\n\n**Eligibility Verification Required:**\nOnly verified top 30 finalists who pitched at Demo Day can mint this certificate. Verification includes submission proof and Demo Day attendance confirmation.\n\n🚀 Celebrate your achievement in the Solana ecosystem with this exclusive blockchain-verified certificate!"
+          "week": 4,
+          "date": "27/5/2025",
+          "topic": "Advanced Strategies"
         }
-    ]
+      ],
+      "registrationLink": "https://lu.ma/2ua2wi0m",
+      "certificateType": "completion",
+      "additionalInfo": "**Certificate Minting for Workshop Participants**\n\nThis certificate minting is exclusively available for participants who attended the 4-week Trading Mastery Workshop sessions.\n\n**Workshop Schedule:**\n- **Week 1 (May 6)**: Foundations of Trading\n- **Week 2 (May 13)**: Technical Mastery  \n- **Week 3 (May 20)**: Risk Management & Psychology\n- **Week 4 (May 27)**: Advanced Strategies\n\n**🕗 Time**: 8:00 PM (Registration starts 7:30 PM)\n**📍 Location**: LT27 & LT28, Taylor's University\n\n**🔥 Exclusive Benefits for Certificate Holders:**\n- Digital Certificate of Completion (NFT)\n- Special Airdrops 🎁\n- Exciting rewards and future workshop priority access! 🎉\n- Proof of completion for your trading education journey\n\n**Eligibility**: Only participants who attended the workshop sessions can mint this certificate. Verification may be required.\n\n**Important Notes:**\n- Seats for the physical workshop are LIMITED\n- Register for the workshop through: https://lu.ma/2ua2wi0m\n- Certificate minting will be available after workshop completion\n- This certificate serves as proof of your trading education achievement\n\n✨ Level up your trading skills and get a blockchain-verified certificate to prove it!"
+    },
+    {
+      "id": 11,
+      "title": "Mega Hackathon Certificate",
+      "imgCard": "/superteam_hackathon.png",
+      "imgCover": "/superteam_hackathon.png",
+      "date": "24/5/2025",
+      "time": "10:00",
+      "location": "Taylor's University Lakeside Campus",
+      "description": "🚀 SuperteamMY Mega Hackathon Certificate Minting for Top 30 Finalists! This hackathon is designed to onboard new developers and groom aspiring founders, helping them launch and kickstart their web3 journey in the Solana ecosystem. Participants who made it to the top 30 submissions and pitched at MegaHack Demo Day are eligible to mint this exclusive certificate NFT. The hackathon featured open-topic building across multiple tracks including DePIN, Stablecoins, DeFi, AI, Gaming, Infrastructure, and Consumer Apps with a total prize pool of $15,000 USDC.",
+      "price": {
+        "certificate": 0.0
+      },
+      "contractAddress": "0xa012345678abcdef0123456789abcdef01234567",
+      "venue": {
+        "name": "Taylor's University Lakeside Campus",
+        "address": "1, Jalan Taylor's, 47500 Subang Jaya, Selangor",
+        "detailedLocation": "MegaHack Demo Day Venue",
+        "capacity": 200,
+        "parking": "Free open-air parking available behind the university"
+      },
+      "organisers": ["Superteam Malaysia"],
+      "organisersImage": ["/superteam.png"],
+      "sponsors": ["Solana Foundation", "Colosseum"],
+      "sponsorsImage": ["/solana_logo.jpg", "/colosseum_logo.png"],
+      "hackathonTracks": [
+        "DePIN",
+        "Stablecoins",
+        "DeFi",
+        "AI",
+        "Gaming",
+        "Infrastructure",
+        "Consumer Apps"
+      ],
+      "prizePool": [
+        {
+          "position": "1st Place",
+          "prize": "$5,000 USDC"
+        },
+        {
+          "position": "2nd Place",
+          "prize": "$3,000 USDC"
+        },
+        {
+          "position": "3rd Place",
+          "prize": "$2,000 USDC"
+        },
+        {
+          "position": "4th Place",
+          "prize": "$1,500 USDC"
+        },
+        {
+          "position": "5th Place",
+          "prize": "$1,000 USDC"
+        },
+        {
+          "position": "6th-10th Place",
+          "prize": "$500 USDC each"
+        }
+      ],
+      "timeline": [
+        {
+          "phase": "Teaming & Building Phase",
+          "dates": "11th March - 14th April"
+        },
+        {
+          "phase": "Submission Period",
+          "dates": "15th April - 15th May"
+        },
+        {
+          "phase": "Preliminary Judging",
+          "dates": "15th May - 20th May"
+        },
+        {
+          "phase": "Top 30 Announcement",
+          "dates": "20th May"
+        },
+        {
+          "phase": "MegaHack Demo Day",
+          "dates": "24th May"
+        },
+        {
+          "phase": "Winners Announcement",
+          "dates": "1st June"
+        }
+      ],
+      "judgingCriteria": [
+        {
+          "category": "Technical Implementation",
+          "weight": "40%",
+          "description": "Quality of code, functionality, scalability, and innovation"
+        },
+        {
+          "category": "Practicality & Impact",
+          "weight": "30%",
+          "description": "User adoption potential and meaningful improvement over existing solutions"
+        },
+        {
+          "category": "Presentation & Clarity",
+          "weight": "20%",
+          "description": "Communication effectiveness and demo quality"
+        },
+        {
+          "category": "User Experience & Design",
+          "weight": "10%",
+          "description": "Interface design, user pain point resolution, and onboarding experience"
+        }
+      ],
+      "submissionRequirements": [
+        "Pitch deck with blockchain integration elements",
+        "3-minute elevator pitch video",
+        "GitHub repository link",
+        "Project social media links",
+        "Submitted to Superteam Earn",
+        "Submitted to Colosseum Breakout"
+      ],
+      "telegramGroup": "https://t.me/superteammy",
+      "certificateType": "participation",
+      "additionalInfo": "**Certificate Minting for Top 30 Hackathon Finalists**\n\nThis exclusive certificate is available only for participants who:\n✅ Made it to the top 30 submissions\n✅ Pitched at MegaHack Demo Day on May 24th at Taylor's University\n✅ Successfully completed all submission requirements\n\n**About SuperteamMY Mega Hackathon:**\nA comprehensive hackathon designed to onboard new developers and groom aspiring founders in the Solana ecosystem. This open-topic, open-to-all hackathon encouraged building across multiple cutting-edge tracks.\n\n**🏆 Total Prize Pool: $15,000 USDC**\nWith prizes ranging from $500 to $5,000 USDC for the top 10 teams.\n\n**🛠️ Building Tracks:**\n- DePIN (Decentralized Physical Infrastructure)\n- Stablecoins\n- DeFi (Decentralized Finance)  \n- AI (Artificial Intelligence)\n- Gaming\n- Infrastructure\n- Consumer Applications\n\n**📋 Judging Focus:**\n- Technical implementation and code quality (40%)\n- Real-world impact and practicality (30%)\n- Presentation clarity and demo effectiveness (20%)\n- User experience and design quality (10%)\n\n**🔗 Resources Provided:**\n- Month-long workshop series for skill development\n- Comprehensive hacker pack with tools and documentation\n- Networking opportunities with industry professionals\n- Access to Solana ecosystem primitives and integrations\n\n**🎯 Certificate Benefits:**\n- Proof of top 30 finalist achievement in Solana hackathon\n- NFT certificate on Solana blockchain\n- Recognition in the Superteam Malaysia ecosystem\n- Portfolio credibility for future web3 opportunities\n- Access to exclusive Superteam events and networking\n\n**⚡ Powered by Solana:**\nThis hackathon emphasized leveraging Solana's high performance and low costs to create exceptional user experiences and innovative solutions.\n\n**Eligibility Verification Required:**\nOnly verified top 30 finalists who pitched at Demo Day can mint this certificate. Verification includes submission proof and Demo Day attendance confirmation.\n\n🚀 Celebrate your achievement in the Solana ecosystem with this exclusive blockchain-verified certificate!"
+    },
+    {
+      "id": 12,
+      "title": "SCS Presentation",
+      "imgCard": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LSSKeOYwgUTZfoBqRjbw3KUXIWQohJyxAg&s",
+      "imgCover": "https://www.edmates.com/wp-content/uploads/2022/09/Taylors_Lakeside_Campus.jpg",
+      "date": "23/7/2025",
+      "time": "10:00",
+      "location": "Taylor's University Bizpod",
+      "description": "SCS Presentation for Ticketwave to show the prototype",
+      "price": {
+        "Free": 0.0
+      },
+      "contractAddress": "0x1234567890abcdef1234567890abcdef12345678",
+      "venue": {
+        "name": "Bizpod",
+        "address": "Taylor's University Lakeside Campus",
+        "capacity": 20
+      },
+      "artists": ["Bizpod"],
+      "additionalInfo": "Please buy tickets and scan on entry. Entry is free."
+    }
+  ]
 }

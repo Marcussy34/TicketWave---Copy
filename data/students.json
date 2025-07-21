@@ -1,0 +1,254 @@
+{
+  "students": [
+    {
+      "email": "john.smith@taylors.edu.my",
+      "name": "John Smith",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "sarah.johnson@upm.edu.my",
+      "name": "Sarah Johnson",
+      "university": "Universiti Putra Malaysia"
+    },
+    {
+      "email": "michael.wong@um.edu.my",
+      "name": "Michael Wong",
+      "university": "University of Malaya"
+    },
+    {
+      "email": "emily.chen@taylors.edu.my",
+      "name": "Emily Chen",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "david.lee@ukm.edu.my",
+      "name": "David Lee",
+      "university": "Universiti Kebangsaan Malaysia"
+    },
+    {
+      "email": "lisa.tan@usm.edu.my",
+      "name": "Lisa Tan",
+      "university": "Universiti Sains Malaysia"
+    },
+    {
+      "email": "alex.kumar@utm.my",
+      "name": "Alex Kumar",
+      "university": "Universiti Teknologi Malaysia"
+    },
+    {
+      "email": "nina.garcia@taylors.edu.my",
+      "name": "Nina Garcia",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "ryan.ng@sunway.edu.my",
+      "name": "Ryan Ng",
+      "university": "Sunway University"
+    },
+    {
+      "email": "amanda.lim@mmu.edu.my",
+      "name": "Amanda Lim",
+      "university": "Multimedia University"
+    },
+    {
+      "email": "james.brown@monash.edu.my",
+      "name": "James Brown",
+      "university": "Monash University Malaysia"
+    },
+    {
+      "email": "jessica.ong@taylors.edu.my",
+      "name": "Jessica Ong",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "kevin.chong@nottingham.edu.my",
+      "name": "Kevin Chong",
+      "university": "University of Nottingham Malaysia"
+    },
+    {
+      "email": "rachel.yap@imu.edu.my",
+      "name": "Rachel Yap",
+      "university": "International Medical University"
+    },
+    {
+      "email": "daniel.foo@apu.edu.my",
+      "name": "Daniel Foo",
+      "university": "Asia Pacific University"
+    },
+    {
+      "email": "sophia.goh@taylors.edu.my",
+      "name": "Sophia Goh",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "marcus.lau@utar.edu.my",
+      "name": "Marcus Lau",
+      "university": "Universiti Tunku Abdul Rahman"
+    },
+    {
+      "email": "natalie.koh@help.edu.my",
+      "name": "Natalie Koh",
+      "university": "HELP University"
+    },
+    {
+      "email": "ethan.teo@inti.edu.my",
+      "name": "Ethan Teo",
+      "university": "INTI International University"
+    },
+    {
+      "email": "chloe.sim@curtin.edu.my",
+      "name": "Chloe Sim",
+      "university": "Curtin University Malaysia"
+    },
+    {
+      "email": "brandon.low@taylors.edu.my",
+      "name": "Brandon Low",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "michelle.chan@msu.edu.my",
+      "name": "Michelle Chan",
+      "university": "Management & Science University"
+    },
+    {
+      "email": "jason.wu@ucsiuniversity.edu.my",
+      "name": "Jason Wu",
+      "university": "UCSI University"
+    },
+    {
+      "email": "grace.yang@taylors.edu.my",
+      "name": "Grace Yang",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "tyler.rahman@uitm.edu.my",
+      "name": "Tyler Rahman",
+      "university": "Universiti Teknologi MARA"
+    },
+    {
+      "email": "maya.patel@limkokwing.edu.my",
+      "name": "Maya Patel",
+      "university": "Limkokwing University"
+    },
+    {
+      "email": "adam.ibrahim@xiamen.edu.my",
+      "name": "Adam Ibrahim",
+      "university": "Xiamen University Malaysia"
+    },
+    {
+      "email": "zoe.liu@taylors.edu.my",
+      "name": "Zoe Liu",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "noah.ahmad@mahsa.edu.my",
+      "name": "Noah Ahmad",
+      "university": "MAHSA University"
+    },
+    {
+      "email": "hannah.khoo@berjaya.edu.my",
+      "name": "Hannah Khoo",
+      "university": "Berjaya University College"
+    },
+    {
+      "email": "lucas.singh@taylors.edu.my",
+      "name": "Lucas Singh",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "olivia.wong@segi.edu.my",
+      "name": "Olivia Wong",
+      "university": "SEGi University"
+    },
+    {
+      "email": "caleb.tan@kdu.edu.my",
+      "name": "Caleb Tan",
+      "university": "KDU University College"
+    },
+    {
+      "email": "mia.lee@taylors.edu.my",
+      "name": "Mia Lee",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "jordan.ng@binary.edu.my",
+      "name": "Jordan Ng",
+      "university": "Binary University"
+    },
+    {
+      "email": "aria.cheng@uniten.edu.my",
+      "name": "Aria Cheng",
+      "university": "Universiti Tenaga Nasional"
+    },
+    {
+      "email": "owen.lim@mmu.edu.my",
+      "name": "Owen Lim",
+      "university": "Multimedia University"
+    },
+    {
+      "email": "eva.soh@taylors.edu.my",
+      "name": "Eva Soh",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "finn.yong@sunway.edu.my",
+      "name": "Finn Yong",
+      "university": "Sunway University"
+    },
+    {
+      "email": "ruby.goh@monash.edu.my",
+      "name": "Ruby Goh",
+      "university": "Monash University Malaysia"
+    },
+    {
+      "email": "blake.chia@taylors.edu.my",
+      "name": "Blake Chia",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "luna.ho@nottingham.edu.my",
+      "name": "Luna Ho",
+      "university": "University of Nottingham Malaysia"
+    },
+    {
+      "email": "kai.tong@apu.edu.my",
+      "name": "Kai Tong",
+      "university": "Asia Pacific University"
+    },
+    {
+      "email": "ivy.chen@taylors.edu.my",
+      "name": "Ivy Chen",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "cole.lau@utar.edu.my",
+      "name": "Cole Lau",
+      "university": "Universiti Tunku Abdul Rahman"
+    },
+    {
+      "email": "nora.khor@help.edu.my",
+      "name": "Nora Khor",
+      "university": "HELP University"
+    },
+    {
+      "email": "drew.xu@inti.edu.my",
+      "name": "Drew Xu",
+      "university": "INTI International University"
+    },
+    {
+      "email": "sage.ooi@curtin.edu.my",
+      "name": "Sage Ooi",
+      "university": "Curtin University Malaysia"
+    },
+    {
+      "email": "jude.leong@taylors.edu.my",
+      "name": "Jude Leong",
+      "university": "Taylor's University"
+    },
+    {
+      "email": "vera.zheng@ucsiuniversity.edu.my",
+      "name": "Vera Zheng",
+      "university": "UCSI University"
+    }
+  ]
+}

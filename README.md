@@ -5,7 +5,7 @@
 
 ![TicketWave Logo](public/ticketwave.svg)
 
-TicketWave is a revolutionary blockchain-powered ticketing platform that eliminates ticket scams through secure NFT tickets and certificates. **Currently live** with core ticketing functionality and NFT certificate generation, we're expanding to combat scalping and unfair distribution through our comprehensive roadmap. Built with Next.js and powered by smart contracts, we're transforming how fans buy tickets and how organizers manage events.
+TicketWave is a revolutionary blockchain-powered ticketing platform that eliminates ticket scams through secure NFT tickets and certificates. **Currently live** with core ticketing functionality and user-mintable NFT certificates for verified event attendance, we're expanding to combat scalping and unfair distribution through our comprehensive roadmap. Built with Next.js and powered by smart contracts, we're transforming how fans buy tickets and how organizers manage events.
 
 ## 🚀 What is TicketWave?
 
@@ -15,7 +15,7 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 - **Zero Counterfeit Tickets** - Each ticket is a unique, tamper-proof NFT ✅
 - **Transparent Process** - All transactions recorded on immutable blockchain ledger ✅
 - **Event Creation & Management** - Full concert/event organization tools ✅
-- **NFT Certificates** - Automated certificate generation for event attendance ✅
+- **NFT Certificates** - User-mintable certificates for verified event attendance ✅
 
 ### 🛣️ **Coming Soon:**
 - **Bot-Free Sales** - World ID verification ensures only humans buy tickets ⏳
@@ -35,7 +35,7 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ### Our Solution
 - **Smart Contracts** automate fair ticket distribution ✅ **(Live)**
 - **NFT Tickets** prevent duplication and counterfeiting ✅ **(Live)**
-- **NFT Certificates** provide verifiable event attendance proof ✅ **(Live)**
+- **NFT Certificates** user-mintable proof for TicketWave event attendance ✅ **(Live)**
 - **World ID** ensures one ticket per verified human ⏳ **(Roadmap)**
 - **Memory Minting** turns event memories into NFTs ⏳ **(Roadmap)**
 - **Regulated Marketplace** enables safe, transparent resales ⏳ **(Roadmap)**
@@ -55,10 +55,11 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 - Advanced event organization tools
 
 #### 🏆 **NFT Certificates** ✅
-- Automated certificate generation for attendees
-- Verifiable proof of event attendance
-- Blockchain-based authenticity
-- Digital collectible memories
+- User-initiated certificate minting for attended events
+- Database verification against TicketWave event attendance records
+- Only available for events in collaboration with TicketWave
+- Blockchain-based proof of authentic event participation
+- Digital collectible memories of your event experiences
 
 ### 🔮 **Planned Features**
 
@@ -157,7 +158,7 @@ Unlike traditional platforms (Ticketmaster) or other Web3 solutions (Seatlab, Op
 ### **Current Advantages** ✅
 - **Lower fees** than traditional platforms  
 - **Complete fraud prevention** through NFT tickets  
-- **NFT certificates** for verifiable event attendance
+- **NFT certificates** for verified TicketWave event attendance
 - **User-friendly** Web3 experience with Google wallet integration
 - **Transparent transactions** on blockchain
 
@@ -235,7 +236,7 @@ TicketWave/
 - **Beta Testing** - 80 tickets sold, 75% attendance
 - **Core NFT Ticketing** - Smart contracts deployed
 - **Event Management** - Full event creation & organization
-- **NFT Certificates** - Automated attendance certificate generation
+- **NFT Certificates** - User-mintable certificates with attendance verification
 - **Web3 Frontend** - User-friendly blockchain interface
 
 ### ⏳ **Upcoming Milestones**

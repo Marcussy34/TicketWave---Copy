@@ -258,11 +258,11 @@ TicketWave/
 ## 👥 Team
 
 - **Phen Jing Yuan**  
-  - *Role*: Founder & CEO, Backend Integration  
+  - *Role*: Founder & CEO
   - [LinkedIn](https://www.linkedin.com/in/jing-yuan-phen-b42266295/)
 
 - **Marcus Tan Chi Yau**  
-  - *Role*: Chief Technology Officer, Frontend Developer  
+  - *Role*: Chief Technology Officer
   - [LinkedIn](https://www.linkedin.com/in/marcus-tan-8846ba271/)
 
 ## 📄 License

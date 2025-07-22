@@ -787,7 +787,7 @@ export const TestimonialsSection = () => {
       body: "Truly seamless ticketing process, I didn't even realize this was on the blockchain!",
       img: "https://avatar.vercel.sh/marcus",
       rating: 5,
-      event: "Blockchain 101"
+      event: "Blockchain 101 Workshop"
     },
     {
       name: "Ho Shao Mun",
@@ -830,12 +830,12 @@ export const TestimonialsSection = () => {
       event: "Taylor's Blockchain Club"
     },
     {
-      name: "Lim Hong Bing",
-      username: "@lhb04",
+      name: "Qun Jie",
+      username: "@qundaojie",
       body: "The verification process is so smooth. Feels secure knowing everyone in line is a real person.",
       img: "https://avatar.vercel.sh/rachel",
       rating: 5,
-      event: "Polytera.dev"
+      event: "Blockchain 101 Workshop"
     }
   ];
 

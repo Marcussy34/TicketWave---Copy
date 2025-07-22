@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const EventsPage = () => {
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
-  const selectedIds = [8, 9, 10, 11, 12];
+  const selectedIds = [8, 9, 10, 11, 12, 13, 14];
   const itemsPerPage = 5;
 
   const getEventSlug = (title, id) => {

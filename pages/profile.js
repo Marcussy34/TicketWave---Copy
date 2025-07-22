@@ -47,10 +47,10 @@ const Portfolio = () => {
     });
 
     // Process the raw ticket data into the format needed by the UI
-    const tickets = React.useMemo(() => {
-        if (!ticketData?.ticketMinteds) return [];
+    const processedData = React.useMemo(() => {
+        if (!ticketData?.ticketMinteds) return { tickets: [], certificates: [] };
 
-        return ticketData.ticketMinteds.map(ticket => {
+        const allItems = ticketData.ticketMinteds.map(ticket => {
             const concertId = parseInt(ticket.concertId);
             const concert = concertData.concerts.find(c => c.id === concertId);
             
@@ -58,6 +58,8 @@ const Portfolio = () => {
                 console.warn("Concert not found for ID:", concertId);
                 return null;
             }
+
+            const isCertificate = concert.title.toLowerCase().includes('certificate');
 
             return {
                 tokenId: Number(ticket.tokenId),
@@ -68,12 +70,23 @@ const Portfolio = () => {
                 image: concert.imgCard,
                 hasEntered: false, // This would need to be determined by checking TicketScanned events
                 purchaseDate: new Date(Number(ticket.timestamp) * 1000),
-                seatType: ticket.seatType
+                seatType: ticket.seatType,
+                isCertificate,
+                description: concert.description
             };
         }).filter(Boolean); // Remove null entries
+
+        // Separate tickets and certificates
+        const tickets = allItems.filter(item => !item.isCertificate);
+        const certificates = allItems.filter(item => item.isCertificate);
+
+        return { tickets, certificates };
     }, [ticketData]);
 
+    const { tickets, certificates } = processedData;
+
     console.log("Processed tickets:", tickets);
+    console.log("Processed certificates:", certificates);
 
     if (!address) {
         return (
@@ -140,24 +153,42 @@ const Portfolio = () => {
 
     const upcomingTickets = tickets.filter(ticket => !ticket.hasEntered);
     const pastTickets = tickets.filter(ticket => ticket.hasEntered);
+    const totalItems = tickets.length + certificates.length;
 
     return (
         <div className="container mx-auto px-4 py-8">
             <ProfileHeader
-                ticketCount={tickets.length}
+                ticketCount={totalItems}
                 attendedCount={pastTickets.length}
                 address={address?.address}
             />
 
             <Tabs
-                aria-label="Ticket Options"
+                aria-label="Ticket and Certificate Options"
                 className="mb-8"
                 color="primary"
             >
-                <Tab key="all" title={`All Tickets (${tickets.length})`}>
+                <Tab key="all" title={`All Items (${totalItems})`}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {tickets.map((ticket) => (
+                            <TicketCard key={`ticket-${ticket.tokenId}`} ticket={ticket} />
+                        ))}
+                        {certificates.map((certificate) => (
+                            <TicketCard key={`cert-${certificate.tokenId}`} ticket={certificate} />
+                        ))}
+                    </div>
+                </Tab>
+                <Tab key="tickets" title={`Tickets (${tickets.length})`}>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {tickets.map((ticket) => (
                             <TicketCard key={ticket.tokenId} ticket={ticket} />
+                        ))}
+                    </div>
+                </Tab>
+                <Tab key="certificates" title={`Certificates (${certificates.length})`}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {certificates.map((certificate) => (
+                            <TicketCard key={certificate.tokenId} ticket={certificate} />
                         ))}
                     </div>
                 </Tab>
@@ -177,11 +208,11 @@ const Portfolio = () => {
                 </Tab>
             </Tabs>
 
-            {tickets.length === 0 && (
+            {totalItems === 0 && (
                 <div className="text-center py-12">
-                    <h3 className="text-xl font-semibold mb-2">No tickets found</h3>
+                    <h3 className="text-xl font-semibold mb-2">No tickets or certificates found</h3>
                     <p className="text-default-500">
-                        You haven&apos;t purchased any tickets yet.
+                        You haven&apos;t purchased any tickets or earned any certificates yet.
                     </p>
                 </div>
             )}

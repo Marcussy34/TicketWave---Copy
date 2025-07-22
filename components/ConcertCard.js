@@ -6,7 +6,7 @@ import concertData from '../data/data.json';
 const UpcomingEvents = ({ concertIds }) => {
     const router = useRouter();
     const eventData = concertIds && !concertIds.includes(-1)
-        ? concertData.concerts.filter(concert => concertIds.includes(concert.id))
+        ? concertIds.map(id => concertData.concerts.find(concert => concert.id === id)).filter(Boolean)
         : concertData.concerts;
 
     const getEventSlug = (title, id) => {

@@ -4,7 +4,7 @@ import concertData from '../data/data.json';
 
 const ImageSlider = ({ concertIds }) => {
   const sliderData = concertIds && !concertIds.includes(-1)
-    ? concertData.concerts.filter(concert => concertIds.includes(concert.id))
+    ? concertIds.map(id => concertData.concerts.find(concert => concert.id === id)).filter(Boolean)
     : concertData.concerts;
 
   const [activeStep, setActiveStep] = useState(0);

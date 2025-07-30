@@ -1,5 +1,6 @@
 # 🎫 TicketWave
-### *"Where Getting Tickets are no longer a hassle"*
+
+### _"Where Getting Tickets are no longer a hassle"_
 
 **🌐 Live Platform:** [https://ticket-wave-five.vercel.app/](https://ticket-wave-five.vercel.app/)
 
@@ -12,12 +13,14 @@ TicketWave is a revolutionary blockchain-powered ticketing platform that elimina
 TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues the music industry. **Currently deployed** with secure NFT ticketing and event management, we're building the future of fair ticketing through blockchain technology.
 
 ### 🎯 **What's Live Now:**
+
 - **Zero Counterfeit Tickets** - Each ticket is a unique, tamper-proof NFT ✅
 - **Transparent Process** - All transactions recorded on immutable blockchain ledger ✅
 - **Event Creation & Management** - Full concert/event organization tools ✅
 - **NFT Certificates** - User-mintable certificates for verified event attendance ✅
 
 ### 🛣️ **Coming Soon:**
+
 - **Bot-Free Sales** - World ID verification ensures only humans buy tickets ⏳
 - **Payment System** - Integrated Stripe payment processing ⏳
 - **Memory Minting** - Convert event photos into NFT memories ⏳
@@ -27,12 +30,14 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ## 🎯 Core Problems We Solve
 
 ### The Current Ticketing Crisis
+
 - **Scalping**: Bots buy tickets in bulk, reselling at 400%+ markup
 - **Fraud**: Fans lose $1M+ annually to fake ticket scams
 - **Unfair Distribution**: Organizers secretly sell to scalpers before public release
 - **Price Gouging**: Third-party platforms exploit desperate fans
 
 ### Our Solution
+
 - **Smart Contracts** automate fair ticket distribution ✅ **(Live)**
 - **NFT Tickets** prevent duplication and counterfeiting ✅ **(Live)**
 - **NFT Certificates** user-mintable proof for TicketWave event attendance ✅ **(Live)**
@@ -45,16 +50,19 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ### 🚀 **Currently Deployed**
 
 #### 🔒 **Secure NFT Ticketing** ✅
+
 - Unique, immutable tickets that cannot be duplicated
 - Blockchain verification prevents fraud
 - Smart contract automation ensures fair distribution
 
 #### 🎪 **Event Management** ✅
+
 - Concert and event creation
 - Ticket sales and distribution
 - Advanced event organization tools
 
 #### 🏆 **NFT Certificates** ✅
+
 - User-initiated certificate minting for attended events
 - Database verification against TicketWave event attendance records
 - Only available for events in collaboration with TicketWave
@@ -64,31 +72,37 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ### 🔮 **Planned Features**
 
 #### 🌍 **World ID Integration** ⏳
+
 - Human verification prevents bot purchases
 - One ticket per verified individual
 - Eliminates bulk buying by scalpers
 
 #### 💳 **Payment System** ⏳
+
 - Integrated Stripe payment processing
 - Secure fiat-to-crypto transactions
 - Multiple payment options
 
 #### 🖼️ **Memory Minting** ⏳
+
 - Convert concert photos into NFTs
 - Create lasting digital memories
 - Additional revenue stream for organizers
 
 #### 🏪 **Secondary Marketplace** ⏳
+
 - Safe, regulated ticket resales
 - Transparent pricing controls
 - Transaction fees shared with organizers
 
 #### 🎨 **NFT Collectibles** ⏳
+
 - Exclusive digital memorabilia
 - Artist artwork and concert highlights
 - Enhanced fan engagement
 
 #### 👤 **ENS Profiles** ⏳
+
 - Personalized Ethereum addresses
 - Showcase NFT collections
 - Build connected fan communities
@@ -96,6 +110,7 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ## 🛠️ Technology Stack
 
 ### **Currently Implemented** ✅
+
 - **Frontend**: Next.js, React, Tailwind CSS
 - **Blockchain**: Optimism Layer 2 (low gas fees)
 - **Smart Contracts**: Solidity, Hardhat
@@ -103,6 +118,7 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 - **Graph**: The Graph Protocol for indexing
 
 ### **Planned** ⏳
+
 - **Identity**: World ID verification
 - **Payments**: Stripe integration
 - **Secondary Market**: Advanced marketplace contracts
@@ -113,12 +129,14 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ## 📊 Market Validation
 
 ### Proven Demand
+
 - **300+ survey respondents** validate market need
 - **88.54%** demand safer secondary market
 - **96.52%** want transparent ticketing
 - **RM 35,000+** lost to scams by surveyed users alone
 
 ### Beta Testing Success
+
 - **80 tickets sold** with **75% attendance rate**
 - **9.1/10** rating for purchase process
 - **88%** would use TicketWave for future events
@@ -127,12 +145,14 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ## 🎯 Target Market
 
 ### Primary: Event Organizers
+
 - Concert venues and festivals
 - University events and clubs
 - Small to large-scale music events
 - Theater and live performances
 
-### Secondary: Event Attendees  
+### Secondary: Event Attendees
+
 - Frequent concert-goers aged 18-35
 - Blockchain-savvy early adopters
 - Fans seeking secure ticket experiences
@@ -141,12 +161,14 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 ## 💰 Business Model
 
 ### Revenue Streams
+
 - **Platform Fees**: 3.1% + RM 2 per ticket
 - **NFT Collectibles**: RM 2 per collectible
 - **Secondary Market**: 3% of resale price
 - **Memory Minting**: RM 2 per mint
 
 ### Financial Projections
+
 - **Year 1 (2025)**: RM 2,274 revenue (500 users)
 - **Year 2 (2026)**: RM 45,480 revenue (10,000 users)
 - **Year 3 (2027)**: RM 181,920 revenue (40,000 users)
@@ -156,23 +178,26 @@ TicketWave addresses the $1M+ problem of ticket fraud and scalping that plagues 
 Unlike traditional platforms (Ticketmaster) or other Web3 solutions (Seatlab, Open Ticketing):
 
 ### **Current Advantages** ✅
-- **Lower fees** than traditional platforms  
-- **Complete fraud prevention** through NFT tickets  
+
+- **Lower fees** than traditional platforms
+- **Complete fraud prevention** through NFT tickets
 - **NFT certificates** for verified TicketWave event attendance
 - **User-friendly** Web3 experience with Google wallet integration
 - **Transparent transactions** on blockchain
 
 ### **Upcoming Advantages** ⏳
+
 - **Bot-proof sales** via World ID verification
 - **Memory minting** for enhanced fan experience
 - **Regulated resales** prevent scalping
 - **NFT collectibles marketplace**
-- **Enhanced analytics** for organizers  
+- **Enhanced analytics** for organizers
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 - MetaMask or Web3 wallet
 
@@ -232,6 +257,7 @@ TicketWave/
 ## 🌟 Roadmap
 
 ### ✅ **Completed (2024-2025)**
+
 - **Market Validation** - 300+ survey respondents
 - **Beta Testing** - 80 tickets sold, 75% attendance
 - **Core NFT Ticketing** - Smart contracts deployed
@@ -240,6 +266,7 @@ TicketWave/
 - **Web3 Frontend** - User-friendly blockchain interface
 
 ### ⏳ **Upcoming Milestones**
+
 - **Q3-Q4 2025**: World ID Integration (bot prevention)
 - **Q4 2025**: Payment System Integration (Stripe)
 - **Q1 2026**: Memory Minting Feature
@@ -248,6 +275,7 @@ TicketWave/
 - **2026**: 500+ Event Participants Target
 
 ### 🚀 **Future Plans (2026+)**
+
 - Multi-chain support (Ethereum, Polygon)
 - Mobile app development
 - Artist collaboration tools
@@ -257,12 +285,13 @@ TicketWave/
 
 ## 👥 Team
 
-- **Phen Jing Yuan**  
-  - *Role*: Founder & CEO
+- **Phen Jing Yuan**
+
+  - _Role_: Founder & CEO
   - [LinkedIn](https://www.linkedin.com/in/jing-yuan-phen-b42266295/)
 
-- **Marcus Tan Chi Yau**  
-  - *Role*: Chief Technology Officer
+- **Marcus Tan Chi Yau**
+  - _Role_: Chief Technology Officer
   - [LinkedIn](https://www.linkedin.com/in/marcus-tan-8846ba271/)
 
 ## 📄 License
@@ -282,6 +311,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The Graph Protocol
 
 ---
-
-*Built with ❤️ by the TicketWave team in Taylor's University, Mal*
-

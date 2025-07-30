@@ -53,6 +53,10 @@ const DetailsPage = () => {
     name: "",
     university: "",
   });
+
+  // Helper function to check if event is a certificate
+  const isCertificate =
+    concert?.title.toLowerCase().includes("certificate") || false;
   const { data: ticketData, isPending } = useReadContract({
     contract,
     method:
@@ -487,9 +491,13 @@ const DetailsPage = () => {
           <div className="lg:col-span-2 space-y-6">
             <Card>
               <CardBody className="space-y-4">
-                <h2 className="text-2xl font-bold">Event Details</h2>
+                <h2 className="text-2xl font-bold">
+                  {isCertificate ? "Certificate Details" : "Event Details"}
+                </h2>
                 <p className="text-default-700 leading-relaxed">
-                  {concert.description}
+                  {isCertificate
+                    ? `This certificate is awarded for participation in: ${concert.description}`
+                    : concert.description}
                 </p>
                 <Divider />
                 <div className="space-y-4">
@@ -585,7 +593,11 @@ const DetailsPage = () => {
                 <Divider />
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold">
-                    {concert.organisers ? "Organizers" : "Featured Artists"}
+                    {isCertificate
+                      ? "Issued by"
+                      : concert.organisers
+                      ? "Organizers"
+                      : "Featured Artists"}
                   </h3>
                   {concert.organisers ? (
                     // Organizers display with images in 3-column grid
@@ -729,7 +741,18 @@ const DetailsPage = () => {
                       ),
                     }}
                   >
-                    {concert.additionalInfo}
+                    {isCertificate
+                      ? concert.additionalInfo
+                          .replace(
+                            /Please buy tickets and/gi,
+                            "You can claim certificate if you have participated in the event."
+                          )
+                          .replace(
+                            /scan on entry/gi,
+                            "You can then access the certificate in your profile"
+                          )
+                          .replace(/Entry is free./gi, "")
+                      : concert.additionalInfo}
                   </ReactMarkdown>
                 </div>
               </CardBody>
@@ -739,7 +762,9 @@ const DetailsPage = () => {
           <div className="space-y-6">
             <Card className="sticky top-4">
               <CardBody className="space-y-6">
-                <h2 className="text-2xl font-bold">Select Tickets</h2>
+                <h2 className="text-2xl font-bold">
+                  {isCertificate ? "Claim Certificate" : "Select Tickets"}
+                </h2>
                 <div className="space-y-4">
                   {Object.entries(concert.price).map(([type, price]) => (
                     <div
@@ -755,7 +780,9 @@ const DetailsPage = () => {
                         <div>
                           <h3 className="font-semibold capitalize">{type}</h3>
                           <p className="text-small text-default-500">
-                            Limited to 1 ticket per person
+                            {isCertificate
+                              ? "Limited to 1 certificate per person"
+                              : "Limited to 1 ticket per person"}
                           </p>
                         </div>
                         <p className="font-bold text-large">
@@ -786,18 +813,28 @@ const DetailsPage = () => {
                   onClick={handleBuyTickets}
                 >
                   {ticketsRemaining <= 0
-                    ? "Sold Out"
+                    ? isCertificate
+                      ? "Certificate Unavailable"
+                      : "Sold Out"
                     : !wallet?.address
-                    ? "Sign in first before buying tickets"
+                    ? isCertificate
+                      ? "Sign in first before claiming certificate"
+                      : "Sign in first before buying tickets"
                     : isConfirming && [8, 9, 12].includes(Number(id))
                     ? "Processing Transaction..."
                     : selectedTicketType
-                    ? "Buy Ticket"
+                    ? isCertificate
+                      ? "Claim Certificate"
+                      : "Buy Ticket"
+                    : isCertificate
+                    ? "Select Certificate Type"
                     : "Select a Ticket Type"}
                 </Button>
 
                 <p className="text-tiny text-default-500 text-center">
-                  By purchasing tickets, you agree to our Terms of Service
+                  {isCertificate
+                    ? "By claiming this certificate, you agree to our Terms of Service"
+                    : "By purchasing tickets, you agree to our Terms of Service"}
                 </p>
               </CardBody>
             </Card>
@@ -816,19 +853,29 @@ const DetailsPage = () => {
             <>
               <ModalHeader className="flex flex-col gap-1">
                 {transactionStatus === "pending"
-                  ? "Complete Purchase"
+                  ? isCertificate
+                    ? "Claim Certificate"
+                    : "Complete Purchase"
                   : transactionStatus === "success"
-                  ? "Purchase Successful!"
+                  ? isCertificate
+                    ? "Certificate Claimed!"
+                    : "Purchase Successful!"
+                  : isCertificate
+                  ? "Certificate Claim Failed"
                   : "Purchase Failed"}
               </ModalHeader>
               <ModalBody>
                 {transactionStatus === "pending" && (
                   <>
-                    <p className="mb-4">You are about to purchase:</p>
+                    <p className="mb-4">
+                      {isCertificate
+                        ? "You are about to claim:"
+                        : "You are about to purchase:"}
+                    </p>
                     <div className="p-4 bg-default-100 rounded-lg mb-4">
                       <p className="font-semibold">{concert.title}</p>
                       <p>
-                        Ticket Type:{" "}
+                        {isCertificate ? "Certificate Type" : "Ticket Type"}:{" "}
                         {selectedTicketType?.charAt(0).toUpperCase() +
                           selectedTicketType?.slice(1)}
                       </p>
@@ -921,8 +968,11 @@ const DetailsPage = () => {
                                 ? ""
                                 : ", name,"}{" "}
                               and university must match our student database to
-                              purchase tickets. Please ensure all details are
-                              entered exactly as registered.
+                              {isCertificate
+                                ? " claim this certificate"
+                                : " purchase tickets"}
+                              . Please ensure all details are entered exactly as
+                              registered.
                             </p>
                           </div>
                         </div>
@@ -934,24 +984,29 @@ const DetailsPage = () => {
                   <div className="text-center px-4 py-6">
                     <div className="mb-6">
                       <span className="text-4xl animate-bounce inline-block">
-                        🎊
+                        {isCertificate ? "🏆" : "🎊"}
                       </span>
                     </div>
                     <h3 className="text-2xl font-bold mb-4">
-                      Purchase Successful!
+                      {isCertificate
+                        ? "Certificate Claimed!"
+                        : "Purchase Successful!"}
                     </h3>
                     <p className="text-xl mb-6">
-                      Your ticket has been purchased successfully!
+                      {isCertificate
+                        ? "Your certificate has been claimed successfully!"
+                        : "Your ticket has been purchased successfully!"}
                     </p>
                     <div className="space-y-4 text-default-600">
                       <p className="text-medium">
-                        You can view your ticket in your profile
+                        {isCertificate
+                          ? "You can view your certificate in your profile"
+                          : "You can view your ticket in your profile"}
                       </p>
                       <div className="bg-default-50 p-4 rounded-lg text-sm leading-relaxed mb-4">
-                        Log in to Ticketwave in browser during the event to scan
-                        your ticket for entry. Additionally, you can download
-                        ticketwave app to scan your ticket for entry for more
-                        easier access.
+                        {isCertificate
+                          ? "Your certificate is now available in your profile. You can download and share your achievement certificate at any time."
+                          : "Log in to Ticketwave in browser during the event to scan your ticket for entry. Additionally, you can download ticketwave app to scan your ticket for entry for more easier access."}
                       </div>
 
                       {/* Download App Button */}
@@ -974,7 +1029,11 @@ const DetailsPage = () => {
                 )}
                 {transactionStatus === "error" && (
                   <div className="text-center text-danger">
-                    <p>Something went wrong with your purchase.</p>
+                    <p>
+                      {isCertificate
+                        ? "Something went wrong with claiming your certificate."
+                        : "Something went wrong with your purchase."}
+                    </p>
                     <p className="text-small mt-2">Please try again later.</p>
                   </div>
                 )}
@@ -991,6 +1050,8 @@ const DetailsPage = () => {
                     >
                       {isConfirming
                         ? "Processing Transaction..."
+                        : isCertificate
+                        ? "Confirm Claim"
                         : "Confirm Purchase"}
                     </Button>
                   )}

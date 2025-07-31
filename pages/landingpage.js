@@ -814,12 +814,12 @@ export const TestimonialsSection = () => {
       event: "MBW 2025"
     },
     {
-      name: "Alex Rodriguez",
-      username: "@alexr_fest",
-      body: "No more refreshing pages for hours. TicketWave's fair queue system actually works for real fans.",
+      name: "Marcus Mah",
+      username: "@marcus888",
+      body: "Claiming my certificate was so easy, it didn't even feel like I was on the blockchain!",
       img: "https://avatar.vercel.sh/alex",
       rating: 5,
-      event: "Coachella 2024"
+      event: "SuperteamMY MEGA"
     },
     {
       name: "Lim Zi Jian",
